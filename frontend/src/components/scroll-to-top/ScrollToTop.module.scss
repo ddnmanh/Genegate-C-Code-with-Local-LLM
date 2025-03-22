@@ -1,0 +1,30 @@
+.scroll-to-top-button {
+    width: 43px;
+    height: 43px;
+    border-radius: 10px;
+    background-color: #606060;
+    box-shadow: 0 0 5px 1px #ccc;
+    opacity: 0.3;
+    transition: all 0.3s;
+    position: fixed;
+    inset: calc(100vh + 43px) 6vw 0vh 94vw;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-to-top-button >span {
+    font-size: 30px;
+    color: #fff;
+}
+
+.scroll-to-top-button.show {
+    top: 90%;
+}
+
+.scroll-to-top-button:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+  

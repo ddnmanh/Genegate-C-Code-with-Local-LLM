@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+}
+
+.content {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    .subheading {
+        font-size: 2rem;
+        color: #4a4a4a;
+        font-weight: 500;
+        font-family: "Inter", sans-serif;
+    }
+    
+    .heading {
+        font-size: 4rem;
+        margin-top: 0.5rem;
+        font-weight: 600;
+        font-family: "Inter", sans-serif;
+    }
+    
+    .description {
+        color: #22c55e;
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .button {
+        margin-top: 1.5rem;
+        padding: 0.8rem 1.6rem;
+        background-color: #2563eb;
+        color: white;
+        border-radius: 9999px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        font-size: 1.1rem;
+    
+        &:hover {
+            background-color: #1d4ed8;
+            cursor: pointer;
+        }
+    }
+}

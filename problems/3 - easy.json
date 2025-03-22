@@ -1,0 +1,10 @@
+{
+    "problem": "Write a C++ program that reads a list of integers A(n) from the keyboard and checks whether the number is a \"lucky number\". By convention, a lucky number is a number whose first and last digits are the same.",
+    "input_desc": "The input data is a list of integers (each value is separated by a space). The first number in the list indicates the number of significant integers n. The remaining n numbers are the integers to be checked for being lucky numbers.",
+    "output_desc": "If the integer A(i) is a \"lucky number\", print YES otherwise print NO. The results are on a single line and separated by a space.",
+    "test_case": [
+        {"input": "4 58 626 131 891", "output": "NO YES YES NO"}, 
+        {"input": "3 697 67 67", "output": "NO NO NO"}, 
+        {"input": "8 0 87 333 98736 606 4444 3333 87928", "output": "NO NO YES NO YES YES YES YES"}
+    ]
+}

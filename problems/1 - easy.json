@@ -1,0 +1,11 @@
+
+{
+    "problem": "Write a program to calculate the sum of even numbers in a list of integers.",
+    "input_desc": "The input data is a sequence of numbers, the first number is the number of elements in the list, the remaining numbers are the numbers in the list.",
+    "output_desc": "The output is a single integer representing the sum of all even numbers in the list.",
+    "test_case": [
+        {"input": "3 1 2 3", "output": "2"}, 
+        {"input": "5 3 5 7 9 1", "output": "0"}, 
+        {"input": "4 3 2 4 6", "output": "12"}
+    ]
+}

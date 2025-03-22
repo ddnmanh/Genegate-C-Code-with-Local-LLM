@@ -1,0 +1,54 @@
+
+
+// https://codepen.io/brycesnyder/pen/GpRYWV
+
+$blue: #4285F4;
+$red:  #DB4437;
+$yellow: #F4B400;
+$green: #0F9D58;
+$colors-list: $blue $red $yellow $green;
+
+.loading-container {
+    width: 157px;
+    height: 89px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    >h1 {
+        font-size: 25px;
+        color: #ccc;
+    }
+
+    .dot-loader {
+        margin-top: 10px;
+        display: block;
+
+
+        span {
+            display: inline-block;
+            margin-top: 8px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            &:not(:first-child) { margin-left: 8px; }
+        } 
+        @each $current-color in $colors-list {
+            $i: index($colors-list, $current-color);
+            $t: $i * -0.25;
+            span:nth-child(#{$i}) {
+                // background: $current-color;
+                background: #ccc;
+                animation: move 1s ease-in-out (#{$t}s) infinite alternate;
+            }
+        }
+    }
+    
+    @keyframes move {
+        from { transform: translateY(-10px); }
+        to { transform: translateY(5px); }
+    }
+}

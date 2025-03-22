@@ -1,0 +1,26 @@
+# Python bytecode và tệp tạm
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Môi trường ảo Python
+myenv/
+env/
+.env/
+virtualenv/
+
+# Tệp cấu hình nhạy cảm
+*.env
+*.secret
+
+# Tệp log
+*.log
+
+# Tệp tạm của IDE/editor
+*.idea/
+*.vscode/
+*.sublime-workspace
+
+# Tệp hệ thống
+.DS_Store
+Thumbs.db 
