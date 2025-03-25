@@ -1,0 +1,7 @@
+__Problem: Write a C++ program that reads a list of integers A(n) from the keyboard and checks whether the number is a \"lucky number\". By convention, a lucky number is a number whose first and last digits are the same. 
+__Input_Desc: The input data is a list of integers (each value is separated by a space). The first number in the list indicates the number of significant integers n. The remaining n numbers are the integers to be checked for being lucky numbers.
+__Output_Desc: If the integer A(i) is a \"lucky number\", print YES otherwise print NO. The results are on a single line and separated by a space.
+__Test_Case:
+4 58 626 131 891 -> NO YES YES NO
+3 697 67 67 -> NO NO NO
+8 789 87 333 98736 606 4444 3333 87928 -> NO NO YES NO YES YES YES YES

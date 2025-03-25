@@ -1,0 +1,9 @@
+{
+    "problem": "Ti and Teo are typists, with the ability to type at an unparalleled speed. Therefore, the two friends often compete to see who types faster. One day, Ti and Teo participate in a typing competition. Thi sees this and immediately thinks of a new game, inviting Ti and Teo to join. The game is as follows: \n- Initially, Thi will read a string S to Ti and Teo. \n- Then there are N rounds. In each round, Thi will read out 3 numbers a, b and c, Ti and Teo's task is to copy the characters between positions a and b to position c. Here, position x is defined as the space right after x characters. For example, in the string 'abdbe', 'db' is in the range 2...4. To ensure the string is not too long, after each round, the characters after position M, if any, will be deleted. \n- After N rounds, the first person to find the first K characters of the string is the winner. \nYou will transform into a keyboard warrior, wanting to complete this game before Ti and Teo! Write a program to complete this game!",
+    "input_desc": "- The first line consists of two numbers K and M. \n- The second line is the string S. \n- The third line is the number N. \n- The next N lines, each line (representing a turn) consists of 3 numbers a, b and c.",
+    "output_desc": "1<=K<=200, 1<=M<=10^9, 1<=|S|<=200000, 1<=N<=200000; \n0<=a<b<= length of string S after i-th turn; \n0<=c<= length of string S after i-th turn; \nIn 3/7 of the test sets, N<=2000 and M<=2000.",
+    "test_case": [
+        {"input": "2 18 copypaste 4 3 6 8 1 5 2 4 12 1 17 18 0", "output": "ac"}, 
+        {"input": "6 100 vvooii 3 5 6 2 4 6 1 1 2 3", "output": "voiovi"}
+    ]
+}

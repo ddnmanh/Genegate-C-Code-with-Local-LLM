@@ -5,6 +5,6 @@
     "test_case": [
         {"input": "4 58 626 131 891", "output": "NO YES YES NO"}, 
         {"input": "3 697 67 67", "output": "NO NO NO"}, 
-        {"input": "8 0 87 333 98736 606 4444 3333 87928", "output": "NO NO YES NO YES YES YES YES"}
+        {"input": "8 789 87 333 98736 606 4444 3333 87928", "output": "NO NO YES NO YES YES YES YES"}
     ]
 }

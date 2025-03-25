@@ -1,0 +1,8 @@
+{
+    "problem": "A character string X is called a substring of a character string Y if we can delete some characters from the string Y to get the string X. Given two character strings A and B consisting only of Latin letters and numbers, find the character string C that has the longest length and is a substring of both A and B.",
+    "input_desc": "The first line contains the character string A. The second line contains the character string B. The length of strings A and B must not exceed 2000 characters.",
+    "output_desc": "Print the length of the string C just found",
+    "test_case": [
+        {"input": "abc1def2ghi3\nabcdefghi123", "output": "10"}
+    ]
+}

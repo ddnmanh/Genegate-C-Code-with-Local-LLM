@@ -14,7 +14,7 @@ cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 model_standard_prompt = "qwen2.5-coder-7b-instruct"
 model_generation_code = "qwen2.5-coder-7b-instruct"
 
-def call_lm_studio(prompt, model_name="local-model", port=1234, max_tokens=500, retries=3):
+def call_lm_studio(prompt, model_name="local-model", port=1234, max_tokens=1000, retries=3):
     url = f"http://localhost:{port}/v1/chat/completions"
     headers = {"Content-Type": "application/json"}
     data = {
