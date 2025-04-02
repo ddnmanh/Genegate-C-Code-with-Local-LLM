@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import arrowUp from '../../assets/icons/angle-up-solid.svg';
 
 import classNames from "classnames/bind"
 import style from './ScrollToTop.module.scss'
@@ -35,7 +36,7 @@ function ScrollToTop() {
             className={cn('scroll-to-top-button') + ' ' + (showButton ? cn('show') : '')}
             onClick={handleScrollToTop}
         >
-            <span className="material-icons-outlined">expand_less</span>
+            <img src={arrowUp} alt="arrow-up" />
         </button>
     );
 }

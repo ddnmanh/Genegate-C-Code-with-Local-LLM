@@ -1,7 +1,8 @@
 // components/StatsOverview.jsx
 import React, { useEffect, useState } from 'react';
 import { PieChart, Pie, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Cell } from 'recharts';
-
+import arrowLeft from '../../../assets/icons/angle-left-solid.svg';
+import arrowRight from '../../../assets/icons/angle-right-solid.svg';
 
 import classNames from 'classnames/bind';
 import style from './Stats.module.scss';
@@ -184,11 +185,11 @@ const Stats = ({ ...props }) => {
                 <div className={cn("chart-container")}>
                     <div className={cn('chart-container_head')}>
                         <button onClick={changeSelectAttempt("prev")} disabled={selectedAttempt.value === 0}>
-                            <ion-icon name="chevron-back-outline"></ion-icon>
+                            <img src={arrowLeft} alt="arrow-left" />
                         </button>
                         <h3>Kết quả test Lần {props.result.history[selectedAttempt.value]?.attempt}</h3>
                         <button onClick={changeSelectAttempt("next")} disabled={selectedAttempt.value === props.result.history.length - 1}>
-                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                            <img src={arrowRight} alt="arrow-right" />
                         </button>
                     </div>
                     <ResponsiveContainer width="100%" height={300} >

@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import arrowDown from '../../assets/icons/angle-down-solid.svg';
+import arrowUp from '../../assets/icons/angle-up-solid.svg';
 
 import classNames from 'classnames/bind';
 import style from './Dropdown.module.scss'
@@ -49,8 +51,8 @@ const Dropdown = ({ options, defaultValue, onChange, label }) => {
                     <span className={cn('dropdown-arrow', { 'open': isOpen })}>
                         {
                             isOpen
-                                ? <ion-icon name="caret-up-outline"></ion-icon>
-                                : <ion-icon name="caret-down-outline"></ion-icon>
+                                ? <img src={arrowUp} alt="arrow-up" />
+                                : <img src={arrowDown} alt="arrow-down" />
                         }
                     </span>
                 </div>

@@ -4,6 +4,8 @@ import mammoth from 'mammoth';
 import jsonFileIMG from '../../../assets/icons/json.png';
 import txtFileIMG from '../../../assets/icons/txt.png';
 import docFileIMG from '../../../assets/icons/doc.png';
+import plus from '../../../assets/icons/plus-solid.svg';
+import minus from '../../../assets/icons/minus-solid.svg';
 
 import classNames from 'classnames/bind';
 import style from './Form.module.scss';
@@ -367,7 +369,7 @@ const Form = ({ ...props }) => {
                                         }}
 
                                     >
-                                        <ion-icon name="remove-outline"></ion-icon>
+                                        <img src={minus} alt="minus" />
                                     </button>
                                 </div>
                             ))
@@ -382,7 +384,7 @@ const Form = ({ ...props }) => {
                                     isAcceptAddNewTestCase() === false
                                 }
                             >
-                                <ion-icon name="add-outline"></ion-icon>
+                                <img src={plus} alt="plus" />
                                 <span>Thêm</span>
                             </button>
                         </div>

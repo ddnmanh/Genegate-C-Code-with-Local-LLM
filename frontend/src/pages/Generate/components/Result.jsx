@@ -4,6 +4,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus, a11yDark, prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Dropdown } from '../../../components';
 
+
 import classNames from 'classnames/bind';
 import style from './Result.module.scss';
 const cn = classNames.bind(style);
