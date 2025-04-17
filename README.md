@@ -23,37 +23,37 @@ Trước khi chạy dự án, hãy đảm bảo bạn đã cài đặt các thà
 ### 1. Backend 
 #### 1.1 Di chuyển vào thư mục backend:
 ```bash
-   cd backend
+cd backend
 ```
 #### 1.2 Tạo môi trường ảo
 ```bash
-    python3 -m venv myenv
+python3 -m venv myenv
 ```
 #### 1.3 Chạy môi trường ảo
 ```bash
-    source myenv/bin/activate
+source myenv/bin/activate
 ```
 #### 1.4 Cài đặt các thư viện
 ```bash
-    pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 #### 1.5 Chạy server
 ```bash
-    python3 app.py
+python3 app.py
 ```
 
 ### 2. Frontend
 #### 2.1 Di chuyển vào thư mục fontend:
 ```bash
-   cd fontend
+cd fontend
 ```
 #### 2.2 Cài đặt các thư viện:
 ```bash
-   npm install
+npm install
 ```
 #### 2.3 Chạy giao diện
 ```bash
-   npm start
+npm start
 ```
 
 ### 3. Cấu hình LM Studio
